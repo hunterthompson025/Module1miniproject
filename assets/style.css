@@ -1,89 +1,113 @@
+/* Universal Selector */
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
+/* Element Selectors */
 body {
-    background-color: grey;
+    position: relative;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: grey;
+    color: blanchedalmond;
 }
 
-header {
-    padding: 30px;
-    background-color:black;
+h1, h2 {
+    margin: 20px;
 }
 
-header nav a {
+main {
+    padding: 60px 0;
+}
+
+li {
     display:inline;
-    float: right;
-    margin-right: 20px;
-    padding-bottom: 10px;
+    padding: 0px 20px;
+    text-decoration: none;
 }
 
 a {
-    color: blanchedalmond;
-    font-size: 20px;
-}
-
-.content {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-}
-
-.content h1 {
-    text-align: center;
-    margin: 10px;
-    padding-bottom: 10px;
-    color: blanchedalmond;
-}
-
-.contact-me {
-    text-align: center;
-    margin: 10px;
-}
-
-h2 {
-    padding-bottom: 20px;
-}
-
-form {
-    margin: auto;
-    width: 300px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 5px;
-}
-
-form ul {
-    list-style-type: none;
-    padding: 5px;
-}
-
-form ul li {
-    padding: 2px;
-}
-
-button {
-    border: none;
-    color: black;
-    padding: 8px 32px;
-    text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    margin: 5px 10px;
-    cursor: pointer;
-    background-color:rgba(59, 59, 59, 0.552);
+    color: blanchedalmond;
 }
 
-.text-center {
-    text-align: center;
+header,
+footer {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    border-bottom: 10px solid blanchedalmond;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: black;
-    color:blanchedalmond;
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
+    border-bottom: 10px solid blanchedalmond;
+    color: blanchedalmond;
 }
+
+figure {
+    margin-bottom: 40px;
+}
+
+img {
+    display:block;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 0;
+    padding: 20px 10px 40px 10px;
+    border-top: 3px solid black;
+    background-color:  darkred;
+  }
+  
+  form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 20px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+    
+  input, 
+  textarea {
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid #4F4846;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 60px;
+  }
+    
+  button {
+    height: 40px;
+    width: 120px;
+    background-color: #4F4846;
+    color: #FDF8F5;
+  }
+   
+  /* Class Selectors */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
